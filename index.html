@@ -1,13 +1,354 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>  
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Лабораторная работа 4</title>
-    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css" />
-    <script src="https://www.x3dom.org/download/x3dom.js"></script>
-  </head>
-  <body>
-    <h1>Здесь только я. А должна быть твоя лаба!</h1>
-  </body> 
+
+<html>
+	<head>
+		<title>laba 4</title>
+		<link rel="stylesheet" type="text/css" href="https://x3dom.org/download/dev/x3dom.css"></link>
+		<script type="text/javascript" src="https://x3dom.org/download/dev/x3dom-full.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<style type="text/css">
+			body{padding:0;margin:0;}
+			X3D{left:0px; top:0px; width:100%; height:100%; border:none;}
+		</style>
+<X3D>
+<Scene>
+	<Collision enabled="true">
+	
+		<Transform  rotation='0 0 0 0' scale='1 1 1' translation='0 0 -5' >
+		<Inline url='"house.x3d"'/>
+		</Transform>
+		
+		<Transform  rotation='0 0 0 0' scale='3 1 3' translation='-18 -1 -18'>
+		
+		<Shape>
+			<Appearance><ImageTexture url="floor.jpg"></ImageTexture><TextureTransform scale='5 5'></TextureTransform></Appearance>
+			<ElevationGrid xDimension="7" zDimension="7"  height="
+			 0.3, 0.0, 0.3, 0.0, 0.3, 0.0, 0.3,
+			 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+			 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+			 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+			 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+			 0.0, 0.0, 0.0,-0.0, 0.0, 0.0, 0.0,
+			 0.3, 0.0,-3.0, 0.0,-2.0, 0.0, 0.0,
+			"	xSpacing="2.0" zSpacing="2.0" solid="false">
+			</ElevationGrid>
+		</Shape>
+		</Transform>
+
+		<Shape>
+					<Appearance>
+						<Material diffuseColor = '#654321'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' -2.1 0.4 0.3,
+										-2.1 -0.8 -0.3,
+										-2.1 0.4 -0.3,
+										-2.1 0.4 0.3,
+										-2.1 -0.8 0.3,
+										-2.1 -0.8 -0.3'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				<!-- krisha -->
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f04a0'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 2.0 2.5 -2,
+										2.0 2.5 2,
+										-2.0 2.5 -2,
+										2.0 2.5 2,
+										-2.0 2.5 2,
+										-2.0 2.5 -2'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				<!-- centralnya krasnaya krisha -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#683d06'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 3 0.5 -2,
+										3 0.5 2,
+										-3 0.5 -2,
+										3 0.5 2,
+										-3 0.5 2,
+										-3 0.5 -2'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				<!--  niznii pol -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '1 0 0'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 2.0 -0.9 -2,
+										2.0 -0.9 2,
+										-2.0 -0.9 -2,
+										2.0 -0.9 2,
+										-2.0 -0.9 2,
+										-2.0 -0.9 -2'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				
+				
+				<!-- krisha sinya kozirek -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f04a0'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 3 0.5 2.0,
+										2 2.5 -2.0,
+										3 0.5 -2.0,
+										3 0.5 2.0,
+										2 2.5 2.0,
+										2 2.5 -2.0'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				<!-- krisha krasnaya kozirek -->
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f04a0'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' -3 0.5 -2.0,
+										-2 2.5 2.0,
+										-3 0.5 2.0,
+										-3 0.5 -2.0,
+										-2 2.5 -2.0,
+										-2 2.5 2.0/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '4 0 0'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 5 8 3,
+										5 8 3,
+										5 8 -3,
+										5 8 3,
+										5 8 -3,
+										5 8 -3'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				
+				
+				
+				<!-- ctenki bokovie -->
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#661f06'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' 2.0 0.5 2,
+										2.0 -0.9 2,
+										2.0 -0.9 -2,
+										2.0 0.5 2,
+										2.0 0.5 -2,
+										2.0 -0.9 -2'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#661f06'/>
+					</Appearance>
+					<IndexedTriangleSet index='0 1 2 3 4 5' solid='false'>
+					<Coordinate point=' -2.0 0.5 2,
+										-2.0 -0.9 2,
+										-2.0 -0.9 -2,
+										-2.0 0.5 2,
+										-2.0 0.5 -2,
+										-2.0 -0.9 -2'/>
+					</IndexedTriangleSet>
+				</Shape>
+				
+				
+				
+				
+				
+				
+				<!-- left/right peregorodki krisha -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f0247'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3 4 5 6'>
+					<Coordinate point=' -3 0.5 -2,
+										-2 0.5 -2,
+										-1 2 -2,
+										-1 0.5 -2,
+										-1 2.5 -2,
+										-2 2.5 -2,
+										-2 2.5 -2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f0247'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3 4 5 6'>
+					<Coordinate point=' 3 0.5 2,
+										2 0.5 2,
+										1 2 2,
+										1 0.5 2,
+										1 2.5 2,
+										2 2.5 2,
+										2 2.5 2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f0247'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3 4 5 6'>
+					<Coordinate point=' -3 0.5 2,
+										-2 0.5 2,
+										-1 2 2,
+										-1 0.5 2,
+										-1 2.5 2,
+										-2 2.5 2,
+										-2 2.5 2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0f0247'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3 4 5 6'>
+					<Coordinate point=' 3 0.5 -2,
+										2 0.5 -2,
+										1 2 -2,
+										1 0.5 -2,
+										1 2.5 -2,
+										2 2.5 -2,
+										2 2.5 -2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				
+				
+				<!-- right 2 стекло -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0ec0f2'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3'>
+					<Coordinate point=' -0.7 -0.5 2.01,
+										-0.2 -0.5 2.01,
+										-0.2 0.4 2.01,
+										-0.7 0.4 2.01
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				<!-- left 1 стекло -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#0ec0f2'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3'>
+					<Coordinate point=' 0.7 -0.5 2.1,
+										0.2 -0.5 2.1,
+										0.2 0.4 2.1,
+										0.7 0.4 2.1
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				<!-- left/right стена -->
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#661f06'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3'>
+					<Coordinate point=' -2.0 -0.9 2,
+										2.0 -0.9 2,
+										2.0 0.5 2,
+										-2.0 0.5 2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				
+				<Shape>
+					<Appearance>
+						<Material diffuseColor = '#661f06'/>
+					</Appearance>
+					<IndexedFaceSet solid='false'
+									coordIndex='0 1 2 3'>
+					<Coordinate point=' -2.0 -0.9 -2,
+										2.0 -0.9 -2,
+										2.0 0.5 -2,
+										-2.0 0.5 -2
+												'/>
+					</IndexedFaceSet>
+				</Shape>
+				
+				</transform>
+				
+				<transform translation='0 0.7 -1'>
+				<shape>
+					<appearance>
+						<ImageTexture url='myachTexture.jpg'></ImageTexture>
+						<TextureTransform rotation='1.57'>
+					</appearance>
+					<sphere radius='0.2'></sphere>
+				</shape>
+				</transform>
+
+	</Collision>
+
+	<NavigationInfo type='WALK'   avatarSize='0.15, 1.6, 0.75' visibilityLimit='0.0' speed='5' headligh="false" ></NavigationInfo>
+	<Viewpoint id="front" position="0 1.6 10" orientation="0 1.6 0 0" centerOfRotation="0 1.6 0" description="front camera"></Viewpoint>
+	<Viewpoint id="left" position="-5 1.6 0" orientation="0 1.6 0 0" centerOfRotation="0 1.6 0" description="left camera"></Viewpoint>
+
+	<PointLight id='point' on='TRUE' intensity='0.5' color='#0FF' location='2.2 2.9 0 ' radius='5.0000' ></PointLight> 
+	<directionalLight id="directional" direction='0 -1 0' on ="TRUE" intensity='0.5' shadowIntensity='0.5'  shadowCascades="1" shadowFilterSize="16" shadowMapSize="512">
+			</directionalLight>
+
+	<Fog color="#fff" visibilityRange="50"></Fog>
+</Scene>
+</X3D>
+
+	</body>
 </html>

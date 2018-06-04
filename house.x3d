@@ -1,0 +1,38 @@
+<Scene>
+	<transform translation='5 1 2'>
+	<Anchor url="https://youtube.com" parameter="target='_blank'">
+		<Shape DEF="spehere">
+			<appearance>
+				<material diffuseColor='255 255 0'></material>
+			</appearance>
+			<sphere radius='0.3'></sphere>
+			
+			
+		</Shape>
+		</Anchor>
+	</transform>
+	<transform translation='-5 1 4 '>
+	
+		<shape use='spehere'></shape>
+	</transform>
+	<group DEF='столб'>
+					<transform translation='5 0.1 2'>
+						<shape>
+							<appearance>
+								<material diffuseColor='#C0C0C0'/>
+				
+							</appearance>
+							<cylinder height='2' radius='0.1'></cylinder>
+						</shape>
+					</transform>
+					<transform translation='-5 0.1 4'>
+						<shape>
+							<appearance>
+								<material diffuseColor='#C0C0C0'/>
+							</appearance>
+							<cylinder height='2' radius='0.1'></cylinder>
+						</shape>
+					</transform>
+	</group>
+		
+</Scene>
